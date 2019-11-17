@@ -1,6 +1,17 @@
 body {
+  background: blanchedalmond;
+  display: flex;
+  justify-content: center;
   font: 14px "Century Gothic", Futura, sans-serif;
-  margin: 20px;
+  margin: 30px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #bb1e1e;
+}
+h1 {
+  color: #bb1e1e;
+  margin-top: 0;
+  margin-bottom: 50px;
 }
 
 ol,
@@ -48,4 +59,42 @@ ul {
 
 .game-info {
   margin-left: 20px;
+}
+
+button {
+  box-sizing: border-box;
+  font-size: 20px;
+  margin: 3px;
+  font-weight: 600;
+  background: beige;
+}
+
+.buttonTrue {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #000;
+  background: yellow;
+  border: none;
+  border-radius: 30px;
+  box-shadow: 0 11px rgb(41, 38, 38);
+}
+
+.buttonFalse {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background: red;
+  border: none;
+  border-radius: 30px;
+  box-shadow: 0 11px rgb(41, 38, 38);
 }
