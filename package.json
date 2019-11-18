@@ -2,7 +2,6 @@
   "name": "project-tictactoe",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://robyafrizal.github.io/project-tictactoe",
   "dependencies": {
     "gh-pages": "^2.1.1",
     "react": "^16.12.0",
