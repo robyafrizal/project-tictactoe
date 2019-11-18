@@ -1,4 +1,5 @@
 import React from "react";
+
 import Board from "./board";
 
 class Game extends React.Component {
@@ -7,7 +8,7 @@ class Game extends React.Component {
     this.state = {
       history: [
         {
-          squares: Array(9).fill(null)
+          squares: Array(9).fill(null) //membuat array isi 9 valua null
         }
       ],
       stepNumber: 0,
@@ -18,7 +19,7 @@ class Game extends React.Component {
   handleClick(i) {
     const history = this.state.history.slice(0, this.state.stepNumber + 1);
     const current = history[history.length - 1];
-    const squares = current.squares.slice();
+    const squares = current.squares.slice(); //Copy state awal, karena state itu imutable(Tidak bisa diubah)
     if (calculateWinner(squares) || squares[i]) {
       return;
     }
